@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>i can't undertand what are you saying.</template>
+  </category>
+  <category>
+      <pattern>Hi</pattern>
+      <template>Hi User,</template>
+  </category>
+  <category>
+      <pattern>Hi ridan </pattern>
+      <template>Hi User,</template>
+  </category>
+    <category>
+      <pattern>Hi * </pattern>
+      <template>Hi, Sorry but my name is Ridan.</template>
+  </category>
+  <category>
+      <pattern>Hello</pattern>
+      <template>Hello User,</template>
+  </category>
+  <category>
+      <pattern>Hello ridan </pattern>
+      <template>Hello User,</template>
+  </category>
+    <category>
+      <pattern>Hello * </pattern>
+      <template>Hello, Sorry but my name is Ridan.</template>
+  </category>
+
+  <category>
+      <pattern>HOW ARE YOU</pattern>
+      <template>I am fine how are you</template>
+  </category>
+    
+  <category>
+      <pattern>I AM FINE</pattern>
+      <template>Oh thats great! <br /> What would you like to ask about. <br /> 1) MOVIES <br /> 2) FOOD</template>
+  </category>
+   <category>
+      <pattern>I AM ALSO FINE</pattern>
+      <template>Oh thats great! <br /> What would you like to ask about. <br /> 1) MOVIES <br /> 2) FOOD</template>
+  </category>
+  <category>
+      <pattern>I AM FINE AND HOW ARE YOU</pattern>
+      <template>I am also fine, <br /> What would you like to ask about. <br /> 1) MOVIES <br /> 2) FOOD  </template>
+  </category>
+  
+  
+      <category>
+    <pattern>FOOD</pattern>
+    <template>
+    I love eating FOOD.
+    <think><set name="topic">FOOD</set></think>
+    <br/>Did you like biryani?
+    </template>
+</category>
+
+    <category>
+    <pattern>MOVIES</pattern>
+    <template>
+    I love talking about movies too!
+    <think><set name="topic">MOVIE</set></think>
+    <br/>Did you like comedy movies?
+    </template>
+</category>
+
+
+
+<topic name="MOVIE">
+    <category>
+        <pattern>YES</pattern>
+        <that>* LIKE COMEDY  *</that>
+        <template>You seems an interesting person!</template>
+    </category>
+    <category>
+        <pattern>NO</pattern>
+        <that>* LIKE COMEDY  *</that>
+        <template>You seems a boring person!</template>
+    </category>
+    </topic>
+
+<topic name="FOOD">
+    <category>
+        <pattern>YES</pattern>
+        <that>* LIKE BIRYANI  *</that>
+        <template>You seems an interesting person!</template>
+    </category>
+    <category>
+        <pattern>NO</pattern>
+        <that>* LIKE BIRYANI  *</that>
+        <template>You seems a boring person!</template>
+    </category>
+    </topic>
+    
+</aiml>
